@@ -1,15 +1,6 @@
 from collections import deque
 
 def is_palindrome(text):
-    """
-    Перевіряє, чи є рядок паліндромом.
-
-    Args:
-        text: Рядок, який потрібно перевірити.
-
-    Returns:
-        True, якщо рядок є паліндромом, False інакше.
-    """
     text = ''.join(filter(str.isalnum, text.lower().replace(" ", "")))
     deque_text = deque(text)
     
